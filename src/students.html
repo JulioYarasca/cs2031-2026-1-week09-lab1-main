@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo week7</title>
+  <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="bg-slate-400"></body>
+<nav class="w-full bg-slate-200 py-3 px-4 sm:px-8 flex justify-between items-center">
+  <div class="text-xl">Sparky Students</div>
+  <ul class="flex">
+    <li class="py-2 px-4 hover:bg-slate-300 rounded-full"><a href="students.html">Students</a></li>
+    <li class="py-2 px-4 hover:bg-slate-300 rounded-full"><a href="index.html">Register</a></li>
+    <li class="py-2 px-4 hover:bg-slate-300 rounded-full"><a href="update.html">Update</a></li>
+  </ul>
+</nav>
+
+<main class="w-full min-h-[90vh] flex flex-col justify-center items-center">
+  <button id="buttonStudents" class="mt-5 bg-slate-200 px-4 py-2 rounded-full hover:bg-slate-300">Get Students</button>
+
+  <article class="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-slate-200 sm:rounded-xl sm:my-5 px-10 py-4 flex flex-col">
+    <h2 class="text-xl font-bold mb-2">Students</h2>
+    <ul id="resultStudents">
+
+    </ul>
+  </article>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.3/axios.min.js"></script>
+<script type="module" src="./scripts.js"></script>
+</body>
+
+</html>

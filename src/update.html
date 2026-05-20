@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Demo week 7</title>
+  <title>Update Student</title>
   <link rel="stylesheet" href="./output.css">
 </head>
 
@@ -21,8 +21,12 @@
   <main class="w-full min-h-[90vh] flex justify-center items-center">
     <article
       class="w-full sm:w-4/5 md:w-3/5 lg:w-2/5 bg-slate-200 sm:rounded-xl sm:my-5 px-10 py-4 flex flex-col items-center">
-      <h1 class="text-2xl font-bold mb-3">Register Form</h1>
-      <form id="form">
+      <h1 class="text-2xl font-bold mb-3">Update Student</h1>
+      <form id="form-update">
+        <section>
+          <label for="id">ID:</label>
+          <input type="number" name="id" id="id" required>
+        </section>
         <section class="w-full sm:flex justify-between">
           <div class="m-0 sm:mr-2">
             <label for="firstname">Firstname: </label>
@@ -61,8 +65,6 @@
           <button id="button" class="bg-gray-500 px-10 mt-1 py-1 rounded-full text-white font-bold">Submit</button>
         </section>
       </form>
-
-      <aside class="mt-5" id="result"></aside>
     </article>
   </main>
 
